@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+}
+
+.headerbox{
+  z-index:2;
+}
+.nav:hover{
+  padding:10px;
+  background:white;
+  border-radius: 50%;
+}
+
+.social{
+  background: white;
+  border:1px solid black;
+  height: 70px;
+  width:70px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.r{
+  animation: r 1s infinite;
+}
+
+@keyframes r {
+  0%{
+   opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+
+
+.k{
+  animation: k 1s infinite;
+}
+
+@keyframes k {
+  0%{
+   opacity: 0.5;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+
+.p{
+  animation: p 1s infinite;
+}
+
+@keyframes p {
+  0%{
+   opacity: 0.5;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.mainpage{
+  margin-top: 90px;
+}
+
+input,textarea{
+  height:40px;
+  width:100%;
+  padding-left:20px;
+  border:1px solid gray;
+}
+
+input:focus{
+  outline:none;
+  border:2px solid gray;
+}
+
+textarea{
+  padding-top:10px;
+  height:100px;
+}
+
+.tech{
+  display:"flex";
+  flex-wrap:"wrap";
+  border:"2px solid white";
+}
+
+#admin{
+  color:"white";
+  border:"1px solid white";
+}
